@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Photo Edito</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="body">
+      <header>
+        <h1>Welcome to Image Editor</h1>
+      </header>
+      <div class="container disable">
+        <!-- <h2>Choose a Photo</h2> -->
+        <div class="wrapper">
+          <div class="editor-panel">
+            <div class="filter">
+              <label class="title">Filters</label>
+              <div class="options">
+                <button id="brightness" class="active">Brightness</button>
+                <button id="saturation">Saturation</button>
+                <button id="inversion">Inversion</button>
+                <button id="grayscale">Grayscale</button>
+              </div>
+              <div class="slider">
+                <div class="filter-info">
+                  <p class="name">Brighteness</p>
+                  <p class="value">100%</p>
+                </div>
+                <input type="range" value="100" min="0" max="200" />
+              </div>
+            </div>
+            <div class="rotate">
+              <label class="title">Rotate & Flip</label>
+              <div class="options">
+                <button id="left">
+                  <i class="fa-solid fa-rotate-left"></i>
+                </button>
+                <button id="right">
+                  <i class="fa-solid fa-rotate-right"></i>
+                </button>
+                <button id="horizontal">
+                  <i class="bx bx-reflect-vertical"></i>
+                </button>
+                <button id="vertical">
+                  <i class="bx bx-reflect-horizontal"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="preview-img">
+            <img src="image-placeholder.svg" alt="preview-img" />
+          </div>
+        </div>
+        <div class="controls">
+          <button class="reset-filter">Reset Filters</button>
+          <div class="row">
+            <input type="file" class="file-input" accept="image/*" hidden />
+            <button class="choose-img">Choose Image</button>
+            <button class="save-img">Save Image</button>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScxM7TbXcBJ5YPbSUQl1GBdZV-OdC3An0ZMPM8mod3yltEcdg/viewform?usp=sf_link"
+            target="_blank"
+            >Contact Us</a
+          >
+          <a href="">Turms of use</a>
+          <a href="">Privasy policy</a>
+        </div>
+        <div>
+          <a
+            href="https://www.facebook.com/nazmulhoque.choudhury.92"
+            class="fa fa-facebook"
+          ></a>
+
+          <a
+            href="https://www.linkedin.com/in/nazmul-hoque-choudhury-7a4b091b7/"
+            class="fa fa-linkedin"
+          ></a>
+          <a
+            href="https://www.instagram.com/nazmul_ee_41/"
+            class="fa fa-instagram"
+          ></a>
+        </div>
+      </footer>
+      <div
+        class="footer_bar"
+        style="
+          color: white;
+          position: fixed;
+          left: 0;
+          text-align: center;
+          bottom: 0;
+          width: 100%;
+          background-color: rgb(10, 10, 10);
+        "
+      >
+        Copyright © ImageEditor All rights reserved.
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
